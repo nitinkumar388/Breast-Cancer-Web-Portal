@@ -1,5 +1,5 @@
 
-# Breast cancer classification
+# Breast cancer probability detector
 
 Breast cancer is the most common cancer among women worldwide, accounting for 25 percent of all cancer.
 cases and affected two point one million people in 2015, early diagnosis significantly increases the.
