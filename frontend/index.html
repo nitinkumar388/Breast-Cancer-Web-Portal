@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Breast cancer(Malignant Benign)</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-section">
+              Welcome | Breast cancer(Malignant Benign)
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div
+                  class="
+                    col-lg-8 col-md-7
+                    order-md-last
+                    d-flex
+                    align-items-stretch
+                  "
+                >
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+                    <h3 class="mb-4">Safe & Anonymous Check</h3>
+                    <div id="form-message-warning" class="mb-4"></div>
+                    <div id="form-message-success" class="mb-4">
+                      Please Wait while we analyze, thank you!
+                    </div>
+                    <form
+                      method="POST"
+                      action="/"
+                      id="inputForm"
+                      class="inputForm"
+                    >
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_radius"
+                              >Enter mean radius Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="mean_radius" name="mean_radius" placeholder="Enter mean radius Value"
+                              
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_texture"
+                              >Enter mean texture Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="mean_texture" name="mean_texture" placeholder="Enter mean texture Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_perimeter"
+                              >Enter mean perimeter Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="mean_perimeter" name="mean_perimeter" placeholder="Enter mean perimeter Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_area"
+                              >Enter mean area Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="mean_area" name="mean_area" placeholder="Enter mean area Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_smoothness"
+                              >Enter mean smoothness Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="mean_smoothness" name="mean_smoothness" placeholder="Enter mean smoothness Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_compactness"
+                              >Enter mean compactness Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="mean_compactness" name="mean_compactness" placeholder="Enter mean compactness Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_concavity"
+                              >Enter mean concavity Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="mean_concavity" name="mean_concavity" placeholder="Enter mean concavity Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_concave_points"
+                              >Enter mean concave_points Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="mean_concave_points" name="mean_concave_points" placeholder="Enter mean concave points Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_symmetry"
+                              >Enter mean symmetry Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="mean_symmetry" name="mean_symmetry" placeholder="Enter mean symmetry Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="mean_fractal_dimension"
+                              >Enter mean fractal dimension Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="mean_fractal_dimension" name="mean_fractal_dimension" placeholder="Enter mean fractal dimension Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="radius_error"
+                              >Enter radius error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="radius_error" name="radius_error" placeholder="Enter radius error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="texture_error"
+                              >Enter texture error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="texture_error" name="texture_error" placeholder="Enter texture error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="perimeter_error"
+                              >Enter perimeter error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="perimeter_error" name="perimeter_error" placeholder="Enter perimeter error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="area_error"
+                              >Enter area error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="area_error" name="area_error" placeholder="Enter area error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="smoothness_error"
+                              >Enter smoothness error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="smoothness_error" name="smoothness_error" placeholder="Enter smoothness error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="compactness_error"
+                              >Enter compactness error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="compactness_error" name="compactness_error" placeholder="Enter compactness error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="cancavity_error"
+                              >Enter cancavity error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="cancavity_error" name="cancavity_error" placeholder="Enter cancavity error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="concave_points_error"
+                              >Enter concave points error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="concave_points_error" name="concave_points_error" placeholder="Enter concave points error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="symmetry_error"
+                              >Enter symmetry error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="symmetry_error" name="symmetry_error" placeholder="Enter symmetry error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="fractal_dimension_error"
+                              >Enter fractal dimension error Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="fractal_dimension_error" name="fractal_dimension_error" placeholder="Enter fractal dimension error Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_radius"
+                              >Enter worst radius Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_radius" name="worst_radius" placeholder="Enter worst radius Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_texture"
+                              >Enter worst texture Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_texture" name="worst_texture" placeholder="Enter worst texture Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_perimeter"
+                              >Enter worst perimeter Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_perimeter" name="worst_perimeter" placeholder="Enter worst perimeter Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_area"
+                              >Enter worst area Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_area" name="worst_area" placeholder="Enter worst area Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_smoothness"
+                              >Enter worst smoothness Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_smoothness" name="worst_smoothness" placeholder="Enter worst smoothness Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_compactness"
+                              >Enter worst compactness Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_compactness" name="worst_compactness" placeholder="Enter worst compactness Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_concavity"
+                              >Enter worst concavity Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_concavity" name="worst_concavity" placeholder="Enter worst concavity Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_concave_points"
+                              >Enter worst concave points Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_concave_points" name="worst_concave_points" placeholder="Enter worst concave_points Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_symmetry"
+                              >Enter worst symmetry Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_symmetry" name="worst_symmetry" placeholder="Enter worst symmetry Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="worst_fractal_dimension"
+                              >Enter worst fractal dimension Value</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="worst_fractal_dimension" name="worst_fractal_dimension" placeholder="Enter worst fractal dimension Value"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="submit"
+                              value="Send Data"
+                              class="btn btn-primary"
+                            />
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+                  <div class="info-wrap bg-primary w-100 p-md-5 p-2">
+                    <h5 class="text-uppercase font-weight-bold text-third">together <span id="texttype"></span></h5>
+                    <p class="mb-4 text-third">
+                      October is Breast Cancer Awareness Month, which is an
+                      annual campaign to increase awareness of the disease.
+                    </p>
+                    <hr style="width: 100%; background-color: green;">
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <ul style="list-style: none">
+                        <li
+						class="text-center w-100 align-items-center"
+                          style="
+                           font-size: 18px;
+                          "
+                        >
+                          <a
+                            style="color: black"
+                            href="https://www.nationalbreastcancer.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Nationalbreastcancer</a
+                          >
+                        </li>
+						<hr style="width: 100%; background-color: green;">
+                        <li
+						class="text-center w-100 align-items-center"
+                          style="
+
+
+                            font-size: 18px;
+                          "
+                        >
+                          <a
+                            style="color: black"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Some other resources</a
+                          >
+                        </li>
+						<hr style="width: 100%; background-color: green;">
+                      </ul>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+          <center>
+              <p>Copyright &copy; GOW . All Rights Reserved  |  Frontend by Vishal Kumar 👽 | Backend & Ml by Nitin Kumar ✌</p>	
+          </center>
+      </div>
+  </footer>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      var typeEffect = document.getElementById('texttype');
+
+var typewriter = new Typewriter(typeEffect, {
+    loop: true
+});
+
+// ['education','treatment', 'support', 'hope', 'hope', 'screening', 'access']
+typewriter.typeString('education')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('treatment')
+    .pauseFor(2200)
+    .deleteChars(9)
+    .typeString('support')
+    .pauseFor(2200)
+    .deleteChars(7)
+    .typeString('hope')
+    .pauseFor(2200)
+    .deleteChars(4)
+    .typeString('screening')
+    .pauseFor(2200)
+    .deleteChars(9)
+    .typeString('access')
+    .pauseFor(2000)
+    .start();
+    </script>
+  </body>
+</html>
