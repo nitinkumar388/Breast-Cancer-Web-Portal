@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Breast cancer(Malignant Benign)</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-section">
+              Welcome | Breast cancer(Malignant Benign)
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div
+                  class="
+                    col-lg-8 col-md-7
+                    order-md-last
+                    d-flex
+                    align-items-stretch
+                  "
+                >
+                <div class="container">
+                    <center>
+                      <h2 class="mt-3">Breast cancer Probability Detector</h2>
+                      <br /><br />
+                      <p>Thanks for using Breast cancer probability detector.</p>
+                      <p>Prbability of Malignant is {{inf}}%. Thank You</p>
+              
+                      <a href="/">
+                        <button class="btn btn-success my-2 my-sm-0" type="submit">
+                          Go Back
+                        </button>
+                      </a>
+                    </center>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+                  <div class="info-wrap bg-primary w-100 p-md-5 p-2">
+                    <h5 class="text-uppercase font-weight-bold text-third">together <span id="texttype"></span></h5>
+                    <p class="mb-4 text-third">
+                      October is Breast Cancer Awareness Month, which is an
+                      annual campaign to increase awareness of the disease.
+                    </p>
+                    <hr style="width: 100%; background-color: green;">
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <ul style="list-style: none">
+                        <li
+						class="text-center w-100 align-items-center"
+                          style="
+                           font-size: 18px;
+                          "
+                        >
+                          <a
+                            style="color: black"
+                            href="https://www.nationalbreastcancer.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Nationalbreastcancer</a
+                          >
+                        </li>
+						<hr style="width: 100%; background-color: green;">
+                        <li
+						class="text-center w-100 align-items-center"
+                          style="
+
+
+                            font-size: 18px;
+                          "
+                        >
+                          <a
+                            style="color: black"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Some other resources</a
+                          >
+                        </li>
+						<hr style="width: 100%; background-color: green;">
+                      </ul>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+          <center>
+              <p>Copyright &copy; GOW . All Rights Reserved  |  Frontend by Vishal Kumar 👽 | Backend & Ml by Nitin Kumar ✌</p>	
+          </center>
+      </div>
+  </footer>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      var typeEffect = document.getElementById('texttype');
+
+var typewriter = new Typewriter(typeEffect, {
+    loop: true
+});
+
+// ['education','treatment', 'support', 'hope', 'hope', 'screening', 'access']
+typewriter.typeString('education')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('treatment')
+    .pauseFor(2200)
+    .deleteChars(9)
+    .typeString('support')
+    .pauseFor(2200)
+    .deleteChars(7)
+    .typeString('hope')
+    .pauseFor(2200)
+    .deleteChars(4)
+    .typeString('screening')
+    .pauseFor(2200)
+    .deleteChars(9)
+    .typeString('access')
+    .pauseFor(2000)
+    .start();
+    </script>
+  </body>
+</html>
