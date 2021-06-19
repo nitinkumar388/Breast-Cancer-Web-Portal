@@ -216,7 +216,7 @@ W.H. Wolberg, W.N. Street, D.M. Heisey, and O.L. Mangasarian. Computer-derived n
 ## Authors
 
 - [@nitinkumar388](https://github.com/nitinkumar388)
-- https://github.com/vishal035
+- [@vishal035](https://github.com/vishal035)
 
   
 ## Badges
